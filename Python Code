@@ -1,0 +1,10 @@
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+        words=s.strip().split()
+        if not words:
+            return 0
+        else:
+            return len(words[-1])
+
+#Stripping trailing whitespaces takes linear time, so it's O(n)O(n)O(n) where nnn is the length of the input string.
+#Splitting the string into words also takes linear time, so it's also O(n)O(n)O(n).
